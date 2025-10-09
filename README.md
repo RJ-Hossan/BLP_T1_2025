@@ -104,5 +104,3 @@ For queries or collaborations, please contact:
 ## 🪪 License
 
 This repository is released under the **MIT License**. Please see the LICENSE file for details.
-
-```
