@@ -88,9 +88,38 @@ def calculate_metrics(y_true, y_pred, labels):
 
 # ---------- PROCESS FILES ----------
 rows = []
-hate_type_labels = ["Abusive", "Sexism", "Religious", "Political", "Profane", "None"]
-severity_labels = ["Little to None", "Mild", "Severe"]
-to_whom_labels = ["Individuals", "Organizations", "Communities", "Society", "None"]
+# hate_type_labels = ["Abusive", "Sexism", "Religious", "Political", "Profane", "None"]
+# severity_labels = ["Little to None", "Mild", "Severe"]
+# to_whom_labels = ["Individuals", "Organizations", "Communities", "Society", "None"]
+
+# ---------- CORRECT LABELS FROM THE ACTUAL DATASET ----------
+hate_type_labels = [
+    "Abusive",
+    "Political Hate",      # ← was missing "Hate"
+    "Profane",
+    "Religious Hate",      # ← was missing "Hate"
+    "Sexism",
+    "None"
+]
+
+severity_labels = [
+    "Little to None",
+    "Mild",
+    "Severe"
+]
+
+to_whom_labels = [
+    "Individual",          # ← singular, not "Individuals"
+    "Organization",       # ← singular
+    "Community",           # ← singular
+    "Society",
+    "None"
+]
+
+# # Optional: sort alphabetically for consistency (recommended)
+# hate_type_labels = sorted(hate_type_labels)
+# severity_labels = sorted(severity_labels)
+# to_whom_labels = sorted(to_whom_labels)
 
 for file in os.listdir(extract_path):
     if file.endswith(".tsv"):
