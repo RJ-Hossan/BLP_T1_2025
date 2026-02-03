@@ -7,15 +7,29 @@ This repository contains the implementation, experimental setup, and utilities f
 
 
     ```bibtex
-      @inproceedings{BLP2025:task1:CUET-NLP_Zenith,
-        author    = {Hossan, Md. Refaj and Ahmed, Kawsar and Hoque, Mohammed Moshiul},
-        title     = "CUET-NLP_Zenith at BLP-2025 Task 1: A Multi-Task Ensemble Approach for Detecting Hate Speech in Bengali YouTube Comments",
-        booktitle = "Proceedings of the 2nd Workshop on Bangla Language Processing (BLP 2025)",
-        month     = dec,
-        year      = "2025",
-        address   = "Mumbai, India",
+    @inproceedings{hossan-etal-2025-cuet-nlp-zenith,
+        title = "{CUET}-{NLP}{\_}{Z}enith at {BLP}-2025 Task 1: A Multi-Task Ensemble Approach for Detecting Hate Speech in {B}engali {Y}ou{T}ube Comments",
+        author = "Hossan, Md. Refaj  and
+          Ahmed, Kawsar  and
+          Hoque, Mohammed Moshiul",
+        editor = "Alam, Firoj  and
+          Kar, Sudipta  and
+          Chowdhury, Shammur Absar  and
+          Hassan, Naeemul  and
+          Prince, Enamul Hoque  and
+          Tasnim, Mohiuddin  and
+          Rony, Md Rashad Al Hasan  and
+          Rahman, Md Tahmid Rahman",
+        booktitle = "Proceedings of the Second Workshop on Bangla Language Processing (BLP-2025)",
+        month = dec,
+        year = "2025",
+        address = "Mumbai, India",
         publisher = "Association for Computational Linguistics",
-      }
+        url = "https://aclanthology.org/2025.banglalp-1.38/",
+        pages = "443--452",
+        ISBN = "979-8-89176-314-2",
+        abstract = "Hate speech on social media platforms, particularly in low-resource languages like Bengali, poses a significant challenge due to its nuanced nature and the need to understand its type, severity, and targeted group. To address this, the Bangla Multi-task Hate Speech Identification Shared Task at BLP 2025 adopts a multi-task learning framework that requires systems to classify Bangla YouTube comments across three subtasks simultaneously: type of hate, severity, and targeted group. To tackle these challenges, this work presents BanTriX, a transformer ensemble method that leverages BanglaBERT-I, XLM-R, and BanglaBERT-II. Evaluation results show that the BanTriX, optimized with cross-entropy loss, achieves the highest weighted micro F1-score of 73.78{\%} in Subtask 1C, securing our team 2nd place in the shared task."
+    }
     ```
 
 ## 🧠 Task Overview
@@ -104,3 +118,4 @@ For queries or collaborations, please contact:
 ## 🪪 License
 
 This repository is released under the **MIT License**. Please see the LICENSE file for details.
+
